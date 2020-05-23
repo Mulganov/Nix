@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pMain"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.8"
+    android:background="@drawable/button"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <TextView
+        android:id="@+id/text_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить продукт"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_titile" />
+
+    <ImageView
+        android:id="@+id/pImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pText"
+        app:layout_constraintTop_toBottomOf="@+id/text_titile"
+        app:srcCompat="@drawable/ic_img" />
+
+    <Button
+        android:id="@+id/pButton"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_on"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pText" />
+
+    <ImageView
+        android:id="@+id/pCamera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pText"
+        app:layout_constraintEnd_toStartOf="@+id/pText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pText"
+        app:layout_constraintVertical_bias="0.38"
+        app:srcCompat="@drawable/ic_camera" />
+</androidx.constraintlayout.widget.ConstraintLayout>
